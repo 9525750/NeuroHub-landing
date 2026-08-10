@@ -124,14 +124,17 @@
 .bento__card .models { position: relative; display: flex; gap: 22px; flex-wrap: wrap; }
 .bento__card .models div b { display: block; font-size: 0.9rem; font-weight: 600; }
 .bento__card .models div span { display: block; font-size: 0.74rem; opacity: 0.75; margin-top: 2px; }
-.p-google { background: linear-gradient(150deg, #274b9f, #6a5acd 60%, #b968c7); }
-.p-openai { background: linear-gradient(150deg, #16161a, #2b2b31); }
-.p-bytedance { background: linear-gradient(150deg, #b6412c, #e07a3f); }
-.p-kling { background: linear-gradient(150deg, #1f2a44, #3a4d7a); }
-.p-nanobanana { background: linear-gradient(150deg, #d9a441, #e8c468); color: #1d1d1f; }
-.p-grok { background: linear-gradient(150deg, #232326, #46464c); }
-.p-suno { background: linear-gradient(150deg, #d1495b, #e8825a); }
-.p-eleven { background: linear-gradient(150deg, #6b2d5c, #a44a8c); }
+/* Реальные генерации из истории NeuroHub (см. public/models/) — тёмный
+   градиент поверх фото держит текст читаемым независимо от того, что
+   на конкретном кадре. */
+.p-google { background: linear-gradient(0deg, rgba(8, 10, 24, 0.8), rgba(8, 10, 24, 0.2)), url("/models/google.webp") center/cover; }
+.p-openai { background: linear-gradient(0deg, rgba(10, 10, 12, 0.8), rgba(10, 10, 12, 0.25)), url("/models/openai.webp") center/cover; }
+.p-bytedance { background: linear-gradient(0deg, rgba(24, 10, 4, 0.75), rgba(24, 10, 4, 0.2)), url("/models/bytedance.webp") center/cover; }
+.p-kling { background: linear-gradient(0deg, rgba(6, 10, 22, 0.8), rgba(6, 10, 22, 0.25)), url("/models/kling.webp") center/cover; }
+.p-nanobanana { background: linear-gradient(0deg, rgba(24, 16, 0, 0.72), rgba(24, 16, 0, 0.18)), url("/models/nanobanana.webp") center/cover; }
+.p-grok { background: linear-gradient(0deg, rgba(10, 10, 12, 0.8), rgba(10, 10, 12, 0.25)), url("/models/grok.webp") center/cover; }
+.p-suno { background: linear-gradient(0deg, rgba(20, 4, 10, 0.72), rgba(20, 4, 10, 0.2)), url("/models/suno.webp") center/cover; }
+.p-eleven { background: linear-gradient(0deg, rgba(20, 4, 16, 0.72), rgba(20, 4, 16, 0.2)), url("/models/eleven.webp") center/cover; }
 
 /* ===================== Feature grid (Section II) ===================== */
 .feat-grid { display: grid; grid-template-columns: 340px repeat(3, 1fr); grid-auto-rows: 200px; gap: 16px; }
