@@ -17,24 +17,6 @@ export default function Home() {
       <Nav />
       <Hero />
 
-      <Showcase
-        eyebrow="ПРИМЕРЫ · Nano Banana Pro"
-        tag="Изображения"
-        title="Nano Banana Pro"
-        description="4K-изображения с точным пониманием промпта — от портрета до сложной сцены с текстом."
-        ctaLabel="Попробовать"
-        columns={5}
-        tiles={[
-          { cls: "t2", vertical: true, label: "Изображение" },
-          { cls: "t1", vertical: true },
-          { cls: "t3", vertical: true },
-          { cls: "t4", vertical: true },
-          { cls: "t5" },
-          { cls: "t6", label: "Изображение" },
-          { cls: "t7" },
-        ]}
-      />
-
       <ModelsBento />
       <Features />
       <AppsGrid />
