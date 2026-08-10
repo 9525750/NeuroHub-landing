@@ -153,23 +153,6 @@
 .feat h4 { font-size: 1.05rem; font-weight: 600; margin-bottom: 8px; }
 .feat p { font-size: 0.92rem; color: var(--ink-soft); line-height: 1.5; }
 
-/* ===================== Popular apps row (Section III) ===================== */
-.apps-head { display: flex; align-items: flex-end; justify-content: space-between; margin-bottom: 28px; flex-wrap: wrap; gap: 12px; }
-.apps-head h2 { font-size: clamp(1.7rem, 2.6vw, 2.2rem); font-weight: 800; letter-spacing: -0.01em; text-transform: uppercase; }
-.apps-head p { color: var(--ink-soft); margin-top: 8px; font-size: 1rem; }
-.apps-row { display: grid; grid-template-columns: repeat(6, 1fr); gap: 14px; }
-.app-card { border-radius: 20px; overflow: hidden; border: 1px solid var(--line); background: var(--surface); }
-.app-card__img { aspect-ratio: 3/4; position: relative; }
-.app-card__badge { position: absolute; top: 10px; left: 10px; font-size: 10px; font-weight: 700; letter-spacing: 0.03em; padding: 4px 9px; border-radius: 999px; color: #fff; }
-.badge-new { background: #34c759; }
-.app-card__label { padding: 12px 14px; font-size: 0.85rem; font-weight: 600; display: flex; align-items: center; justify-content: space-between; }
-.a1 { background: linear-gradient(150deg, #ffd6a5, #ff9a8b); }
-.a2 { background: linear-gradient(150deg, #a5c8ff, #6f7bf7); }
-.a3 { background: linear-gradient(150deg, #b7f2c4, #4fd1c5); }
-.a4 { background: linear-gradient(150deg, #f4b6ff, #a06bff); }
-.a5 { background: linear-gradient(150deg, #ffe29a, #ffa99f); }
-.a6 { background: linear-gradient(150deg, #d4fc79, #96e6a1); }
-
 /* ===================== Included ===================== */
 .incl-head { text-align: center; margin-bottom: 48px; }
 .incl-head h2 { font-size: clamp(2.1rem, 3.6vw, 3rem); font-weight: 700; letter-spacing: -0.01em; }
@@ -232,7 +215,6 @@
   .bento__lead, .feat-lead { grid-column: span 2; grid-row: span 1; }
   .bento__card.wide { grid-column: span 1; }
   .incl-grid, .testi-row { grid-template-columns: 1fr 1fr; }
-  .apps-row { grid-template-columns: repeat(3, 1fr); }
   .showcase { grid-template-columns: 1fr; }
   .foot-grid { grid-template-columns: 1fr 1fr; }
 }
@@ -242,7 +224,6 @@
   .nav__links { display: none; }
   .nav__ctas a.link { display: none; }
   .nav__cta { padding: 9px 16px; font-size: 13px; }
-  .apps-row { grid-template-columns: repeat(2, 1fr); }
   .foot-grid { grid-template-columns: 1fr; }
 
   /* На мобильном — без вертикальных/крупных плиток вообще, просто

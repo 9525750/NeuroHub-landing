@@ -5,7 +5,6 @@ import { Hero } from "@/components/landing/hero";
 import { Showcase } from "@/components/landing/showcase";
 import { ModelsBento } from "@/components/landing/models-bento";
 import { Features } from "@/components/landing/features";
-import { AppsGrid } from "@/components/landing/apps-grid";
 import { Included } from "@/components/landing/included";
 import { Testimonials } from "@/components/landing/testimonials";
 import { Faq } from "@/components/landing/faq";
@@ -19,7 +18,6 @@ export default function Home() {
 
       <ModelsBento />
       <Features />
-      <AppsGrid />
 
       <Showcase
         eyebrow="ПРИМЕРЫ · Kling 3.0"

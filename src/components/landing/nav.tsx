@@ -10,7 +10,6 @@ export function Nav() {
         <div className="nav__links">
           <a href="#models">Модели</a>
           <a href="#tools">Возможности</a>
-          <a href="#apps">Режимы</a>
           <a href={appPath("/billing")}>Цены</a>
           <a href={appPath("/gallery")}>Галерея</a>
           <a href="#faq">Вопросы</a>

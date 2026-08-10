@@ -14,9 +14,9 @@ export function SiteFooter() {
           <div className="foot-col">
             <h5>Продукт</h5>
             <ul>
-              <li><a href="#apps">Изображения</a></li>
-              <li><a href="#apps">Видео</a></li>
-              <li><a href="#apps">Аудио</a></li>
+              <li><a href="#models">Изображения</a></li>
+              <li><a href="#models">Видео</a></li>
+              <li><a href="#models">Аудио</a></li>
               <li><a href={appPath("/billing")}>Цены</a></li>
             </ul>
           </div>
