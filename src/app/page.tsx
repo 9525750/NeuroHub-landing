@@ -24,10 +24,10 @@ export default function Home() {
         description="4K-изображения с точным пониманием промпта — от портрета до сложной сцены с текстом."
         ctaLabel="Попробовать"
         tiles={[
-          { cls: "t2", big: true, label: "Изображение" },
-          { cls: "t1" },
-          { cls: "t3" },
-          { cls: "t4" },
+          { cls: "t2", vertical: true, label: "Изображение" },
+          { cls: "t1", vertical: true },
+          { cls: "t3", vertical: true },
+          { cls: "t4", vertical: true },
           { cls: "t5" },
           { cls: "t6", label: "Изображение" },
           { cls: "t7" },
@@ -46,12 +46,12 @@ export default function Home() {
         ctaLabel="Попробовать Kling 3.0"
         introBackground="linear-gradient(165deg, #eef2fb, #dfe7fb)"
         tiles={[
-          { cls: "t4" },
-          { cls: "t7", big: true, label: "Видео" },
-          { cls: "t3" },
+          { cls: "t4", vertical: true, label: "Видео" },
+          { cls: "t7", vertical: true },
+          { cls: "t3", vertical: true },
+          { cls: "t8", vertical: true },
           { cls: "t5" },
           { cls: "t1", label: "Видео" },
-          { cls: "t8" },
           { cls: "t6" },
         ]}
       />

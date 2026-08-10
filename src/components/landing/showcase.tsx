@@ -1,6 +1,6 @@
 import { appPath } from "@/lib/config";
 
-type Tile = { cls: string; big?: boolean; label?: string };
+type Tile = { cls: string; big?: boolean; vertical?: boolean; label?: string };
 
 export function Showcase({
   eyebrow,
@@ -35,7 +35,10 @@ export function Showcase({
         </div>
         <div className="showcase__grid">
           {tiles.map((tile, i) => (
-            <div key={i} className={`showcase__tile ${tile.cls}${tile.big ? " big" : ""}`}>
+            <div
+              key={i}
+              className={`showcase__tile ${tile.cls}${tile.big ? " big" : ""}${tile.vertical ? " vertical" : ""}`}
+            >
               {tile.label && <span>{tile.label}</span>}
             </div>
           ))}
