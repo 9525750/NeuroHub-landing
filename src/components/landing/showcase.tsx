@@ -10,6 +10,7 @@ export function Showcase({
   ctaLabel,
   introBackground,
   tiles,
+  columns,
 }: {
   eyebrow: string;
   tag: string;
@@ -18,6 +19,9 @@ export function Showcase({
   ctaLabel: string;
   introBackground?: string;
   tiles: Tile[];
+  // 5 — витрина с преимущественно вертикальными плитками (изображения),
+  // 3 — с преимущественно горизонтальными (видео). См. landing.css.
+  columns: 3 | 5;
 }) {
   return (
     <div className="wrap">
@@ -33,7 +37,7 @@ export function Showcase({
             {ctaLabel}
           </a>
         </div>
-        <div className="showcase__grid">
+        <div className={`showcase__grid showcase__grid--${columns}`}>
           {tiles.map((tile, i) => (
             <div
               key={i}

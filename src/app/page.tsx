@@ -23,6 +23,7 @@ export default function Home() {
         title="Nano Banana Pro"
         description="4K-изображения с точным пониманием промпта — от портрета до сложной сцены с текстом."
         ctaLabel="Попробовать"
+        columns={5}
         tiles={[
           { cls: "t2", vertical: true, label: "Изображение" },
           { cls: "t1", vertical: true },
@@ -45,13 +46,14 @@ export default function Home() {
         description="Кинематографичная генерация видео — реалистичное движение, динамика кадра и понимание сцены."
         ctaLabel="Попробовать Kling 3.0"
         introBackground="linear-gradient(165deg, #eef2fb, #dfe7fb)"
+        columns={3}
         tiles={[
           { cls: "t4", vertical: true, label: "Видео" },
-          { cls: "t7", vertical: true },
-          { cls: "t3", vertical: true },
-          { cls: "t8", vertical: true },
-          { cls: "t5" },
-          { cls: "t1", label: "Видео" },
+          { cls: "t7" },
+          { cls: "t3" },
+          { cls: "t8" },
+          { cls: "t5", label: "Видео" },
+          { cls: "t1" },
           { cls: "t6" },
         ]}
       />
