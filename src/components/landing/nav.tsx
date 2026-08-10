@@ -12,6 +12,7 @@ export function Nav() {
           <a href="#tools">Возможности</a>
           <a href="#apps">Режимы</a>
           <a href={appPath("/billing")}>Цены</a>
+          <a href={appPath("/gallery")}>Галерея</a>
           <a href="#faq">Вопросы</a>
         </div>
         <div className="nav__ctas">
