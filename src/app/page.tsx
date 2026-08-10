@@ -6,6 +6,7 @@ import { Showcase } from "@/components/landing/showcase";
 import { ModelsBento } from "@/components/landing/models-bento";
 import { Features } from "@/components/landing/features";
 import { AppsGrid } from "@/components/landing/apps-grid";
+import { Gallery } from "@/components/landing/gallery";
 import { Included } from "@/components/landing/included";
 import { Testimonials } from "@/components/landing/testimonials";
 import { Faq } from "@/components/landing/faq";
@@ -57,6 +58,8 @@ export default function Home() {
           { cls: "t6" },
         ]}
       />
+
+      <Gallery />
 
       <Included />
       <Testimonials />
