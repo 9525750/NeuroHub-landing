@@ -79,10 +79,13 @@
 
 /* ===================== Gallery showcase ===================== */
 .showcase { display: grid; grid-template-columns: 340px 1fr; gap: 18px; background: var(--surface); border: 1px solid var(--line); border-radius: 32px; padding: 18px; }
-.showcase__intro { background: linear-gradient(165deg, #f0f4fb, #e3ecfb); border-radius: 22px; padding: 34px 28px; display: flex; flex-direction: column; }
-.showcase__intro .tag { font-size: 12px; font-weight: 700; letter-spacing: 0.05em; color: var(--accent); text-transform: uppercase; }
-.showcase__intro h3 { font-size: 1.7rem; font-weight: 700; margin-top: 14px; letter-spacing: -0.01em; }
-.showcase__intro p { font-size: 0.98rem; color: var(--ink-soft); margin-top: 12px; line-height: 1.55; }
+.showcase__intro {
+  background: linear-gradient(0deg, rgba(10, 8, 14, 0.82), rgba(10, 8, 14, 0.15)), url("/kling/intro.webp") center/cover;
+  border-radius: 22px; padding: 34px 28px; display: flex; flex-direction: column;
+}
+.showcase__intro .tag { font-size: 12px; font-weight: 700; letter-spacing: 0.05em; color: #8ecbff; text-transform: uppercase; }
+.showcase__intro h3 { font-size: 1.7rem; font-weight: 700; margin-top: 14px; letter-spacing: -0.01em; color: #fff; }
+.showcase__intro p { font-size: 0.98rem; color: rgba(255,255,255,0.82); margin-top: 12px; line-height: 1.55; }
 .showcase__intro .btn { margin-top: 24px; align-self: flex-start; }
 /* Раскладка держится на порядке плиток в data (page.tsx), не на угадывании:
    сперва вертикальные (занимают целый столбец на всю высоту), потом

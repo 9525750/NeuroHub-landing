@@ -24,7 +24,6 @@ export default function Home() {
         title="Kling 3.0"
         description="Кинематографичная генерация видео — реалистичное движение, динамика кадра и понимание сцены."
         ctaLabel="Попробовать Kling 3.0"
-        introBackground="linear-gradient(165deg, #eef2fb, #dfe7fb)"
         columns={3}
         tiles={[
           { cls: "t4", vertical: true, label: "Видео", video: "/kling/video-2.mp4" },
