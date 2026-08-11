@@ -26,7 +26,6 @@ export function ModelsBento() {
             <span className="pill">Один сервис</span>
             <h3>Лучшие модели рынка.</h3>
             <p>Все ведущие AI-модели изображений, видео и звука — без регистрации в десятке отдельных сервисов.</p>
-            <a href="#models">Смотреть все модели →</a>
           </div>
           {CARDS.map((card) => (
             <div key={card.provider} className={`bento__card ${card.cls}${card.wide ? " wide" : ""}`}>
