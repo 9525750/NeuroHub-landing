@@ -10,8 +10,10 @@ export function Nav() {
         <div className="nav__links">
           <a href="#models">Модели</a>
           <a href="#tools">Возможности</a>
+          <a href={appPath("/gallery")} className="nav__links-accent">
+            Галерея
+          </a>
           <a href={appPath("/billing")}>Цены</a>
-          <a href={appPath("/gallery")}>Галерея</a>
           <a href="#faq">Вопросы</a>
         </div>
         <div className="nav__ctas">
