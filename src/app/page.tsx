@@ -6,7 +6,6 @@ import { Showcase } from "@/components/landing/showcase";
 import { ModelsBento } from "@/components/landing/models-bento";
 import { Features } from "@/components/landing/features";
 import { Included } from "@/components/landing/included";
-import { Testimonials } from "@/components/landing/testimonials";
 import { Faq } from "@/components/landing/faq";
 import { SiteFooter } from "@/components/landing/site-footer";
 
@@ -39,7 +38,9 @@ export default function Home() {
       />
 
       <Included />
-      <Testimonials />
+      {/* Testimonials выключен — блок был заполнен примерами, не настоящими
+          отзывами пользователей. Компонент оставлен в кодовой базе, чтобы
+          включить его обратно, когда появятся реальные отзывы. */}
       <Faq />
       <SiteFooter />
     </div>
