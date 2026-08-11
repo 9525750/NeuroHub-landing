@@ -139,12 +139,14 @@
 /* ===================== Feature grid (Section II) ===================== */
 .feat-grid { display: grid; grid-template-columns: 340px repeat(3, 1fr); grid-auto-rows: 200px; gap: 16px; }
 .feat-lead {
-  grid-row: span 2; background: linear-gradient(165deg, #eef2fb, #dfe7fb); border: 1px solid var(--line); border-radius: 24px;
+  grid-row: span 2;
+  background: linear-gradient(0deg, rgba(10, 8, 14, 0.82), rgba(10, 8, 14, 0.15)), url("/features/reference-editing.webp") center/cover;
+  border: 1px solid var(--line); border-radius: 24px;
   padding: 30px 26px; display: flex; flex-direction: column; justify-content: flex-end; position: relative; overflow: hidden;
 }
-.feat-lead .tag { display: inline-flex; align-self: flex-start; gap: 6px; font-size: 11.5px; font-weight: 700; background: rgba(52,199,89,0.12); color: #248a3d; padding: 4px 10px; border-radius: 999px; margin-bottom: 14px; }
-.feat-lead h4 { font-size: 1.3rem; font-weight: 700; }
-.feat-lead p { font-size: 0.92rem; color: var(--ink-soft); margin-top: 8px; line-height: 1.5; }
+.feat-lead .tag { display: inline-flex; align-self: flex-start; gap: 6px; font-size: 11.5px; font-weight: 700; background: rgba(52,199,89,0.2); color: #6fe092; padding: 4px 10px; border-radius: 999px; margin-bottom: 14px; }
+.feat-lead h4 { font-size: 1.3rem; font-weight: 700; color: #fff; }
+.feat-lead p { font-size: 0.92rem; color: rgba(255,255,255,0.82); margin-top: 8px; line-height: 1.5; }
 .feat {
   background: var(--surface); border: 1px solid var(--line); border-radius: 22px; padding: 28px 24px;
   display: flex; flex-direction: column; justify-content: center;
