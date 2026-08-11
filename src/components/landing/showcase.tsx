@@ -1,6 +1,13 @@
 import { appPath } from "@/lib/config";
 
-type Tile = { cls: string; big?: boolean; vertical?: boolean; label?: string };
+type Tile = {
+  cls: string;
+  big?: boolean;
+  vertical?: boolean;
+  label?: string;
+  image?: string;
+  video?: string;
+};
 
 export function Showcase({
   eyebrow,
@@ -43,6 +50,12 @@ export function Showcase({
               key={i}
               className={`showcase__tile ${tile.cls}${tile.big ? " big" : ""}${tile.vertical ? " vertical" : ""}`}
             >
+              {tile.video ? (
+                <video src={tile.video} className="showcase__media" autoPlay muted loop playsInline />
+              ) : tile.image ? (
+                // eslint-disable-next-line @next/next/no-img-element -- фиксированные локальные webp, next/image не нужен для декоративной плитки
+                <img src={tile.image} alt="" className="showcase__media" />
+              ) : null}
               {tile.label && <span>{tile.label}</span>}
             </div>
           ))}

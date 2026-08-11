@@ -27,13 +27,13 @@ export default function Home() {
         introBackground="linear-gradient(165deg, #eef2fb, #dfe7fb)"
         columns={3}
         tiles={[
-          { cls: "t4", vertical: true, label: "Видео" },
-          { cls: "t7" },
-          { cls: "t3" },
-          { cls: "t8" },
-          { cls: "t5", label: "Видео" },
-          { cls: "t1" },
-          { cls: "t6" },
+          { cls: "t4", vertical: true, label: "Видео", video: "/kling/video-1.mp4" },
+          { cls: "t7", image: "/kling/spaceship-interior.webp" },
+          { cls: "t3", image: "/kling/rain-portrait.webp" },
+          { cls: "t8", image: "/kling/cartoon-boy.webp" },
+          { cls: "t5", label: "Видео", video: "/kling/video-2.mp4" },
+          { cls: "t1", image: "/kling/spaceship-fleet.webp" },
+          { cls: "t6", image: "/kling/dragon.webp" },
         ]}
       />
 
